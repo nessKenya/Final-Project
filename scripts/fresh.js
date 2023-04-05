@@ -36,6 +36,25 @@ const populateSelect = async () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
+  if(localStorage.getItem("visits")){
+    const visits = JSON.parse(localStorage.getItem("visits"));
+    document.getElementById("updated").innerHTML = JSON.parse(localStorage.getItem("visits"))[visits.length-1];
+    const newVisits = visits.concat(new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
+      new Date()
+    ));
+    localStorage.setItem("visits", JSON.stringify(newVisits));
+  }else{
+    localStorage.setItem("visits", JSON.stringify([new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
+      new Date()
+    )]));
+    const visits = JSON.parse(localStorage.getItem("visits"));
+    document.getElementById("updated").innerHTML = JSON.parse(localStorage.getItem("visits")[visits.length-1]);
+
+  }
+  document.querySelector("#year").innerHTML = new Date().getFullYear();
+  let today = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
+    new Date()
+  );
   //populate select fields
   populateSelect();
 
