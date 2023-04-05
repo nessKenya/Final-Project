@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles/large.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/x-icon" href="/bountiful/images/icons/bountiful_fruits_favicon.png" alt="bountiful favicon">
+  <link rel="icon" type="image/x-icon" href="/bountiful/images/icons/bountiful_fruits_favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Proza+Libre:wght@500&display=swap" rel="stylesheet">
   <title>Bountiful</title>
 </head>
@@ -54,7 +54,7 @@
           <a href="./aboutus.html">About Us</a>
         </div>
       </div>
-      <div id="socials" class="center">
+      <div id="socials-small" class="center">
         <a href="#" class="center"><img src="./images/icons/facebook.svg" alt="facebook icon"></a>
         <a href="#" class="center"><img src="./images/icons/twitter.svg" alt="twitter icon"></a>
         <a href="#" class="center"><img src="./images/icons/linkedin.svg" alt="linkedin icon"></a>
@@ -70,10 +70,10 @@
             freshly made organic drinks as well as fruits. We cater for the tourists visiting the area and would love a special drink to remind them of their
             visit or the locals who are working towards a healthy living.
           </p>
-          <button class="btn"> <img src="./images/icons/right.svg" alt="right-icon"><a href="./fresh.html">Order Now</a></button>  
+            <button class="btn" onclick="location.href='./fresh.html'"> <img src="./images/icons/right.svg" alt="right-icon">Order Now</button>  
         </div>
         <div>
-          <img src="./images/oranges.png" alt="oranges" />
+          <img src="./images/oranges.png" alt="oranges">
         </div>
       </div>
       <div class="card" id="orders">
@@ -93,28 +93,22 @@
       <div class="weather-grid">
         <div class="card text-center">
           <h3>Today</h3>
-          <p>
-            <img src="" alt="weather icon" id="weather-icon-0">
+            <img src="./images/icons/cloudy.png" alt="weather icon" id="weather-icon-0" class="weather-icon">
             <p id="description-0"></p>
-          </p>
           <span class="bold"><span id="temperature-0"></span><sup>o</sup>C</span>
           <p id="humidity-0"></p>
         </div>
         <div class="card text-center">
           <h3>Tommorow</h3>
-          <p>
-            <img src="" alt="weather icon" id="weather-icon-1">
+            <img src="./images/icons/cloudy.png" alt="weather icon" id="weather-icon-1" class="weather-icon">
             <p id="description-1"></p>
-          </p>
           <span class="bold"><span id="temperature-1"></span><sup>o</sup>C</span>
           <p id="humidity-1"></p>
         </div>
         <div class="card text-center">
-          <h3 id="forecast-date"></h3>
-          <p>
-            <img src="" alt="weather icon" id="weather-icon-2">
+          <h3 id="forecast-date">2 days ahead</h3>
+            <img src="./images/icons/cloudy.png" alt="weather icon" id="weather-icon-2" class="weather-icon">
             <p id="description-2"></p>
-          </p>
           <span class="bold"><span id="temperature-2"></span><sup>o</sup>C</span>
           <p id="humidity-2"></p>
         </div>

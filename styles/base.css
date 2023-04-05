@@ -136,11 +136,11 @@ footer{
   display: none;
 }
 
-#socials{
+#socials, #socials-small{
   display: none;
 }
 
-#dropdown-menu>#socials{
+#dropdown-menu>#socials-small{
   display: flex;
 }
 
@@ -153,7 +153,20 @@ footer{
   border-radius: 4rem;
 }
 
+#socials-small>a{
+  height: 2rem;
+  width: 2rem;
+  background-color: #DDCFBF;
+  margin: 0 0.5rem;
+  padding: 0.25rem;
+  border-radius: 4rem;
+}
+
 #socials>a:hover{
+  background-color: #F0890D;
+}
+
+#socials-small>a:hover{
   background-color: #F0890D;
 }
 
@@ -294,7 +307,7 @@ select{
   margin-bottom: 4rem;
 }
 
-#contact-info {
+#contact-info, #history-info {
   margin-bottom: 2rem;
 }
 
@@ -341,4 +354,9 @@ a:hover {
 
 .map{
   width: 300px;
+}
+
+.weather-icon{
+  width: 48px;
+  box-shadow: 3px 3px 2px #22430D;
 }
